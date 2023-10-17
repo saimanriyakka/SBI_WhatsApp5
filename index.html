@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="eng">
+ <head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="theme-color" content="#00b5ef">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+ <title>SBI - WhatsApp Banking</title>
+ <script language="javascript">
+ var message="Long press disabled.";
+ function clickIE4(){
+ if (event.button==2){
+ alert(message);
+ return false;
+ }
+ }
+ function clickNS4(e){
+ if (document.layers||document.getElementById&&!document.all){
+ if (e.which==2||e.which==3){
+ alert(message);
+ return false;
+ }
+ }
+ }
+ if (document.layers){
+ document.captureEvents(Event.MOUSEDOWN);
+ document.onmousedown=clickNS4;}
+ else if (document.all&&!document.getElementById){
+ document.onmousedown=clickIE4;}
+ document.oncontextmenu=new Function("alert(message);return false;")
+ </script>
+ </head> 
+ <body> 
+ <img src="Rewardz_SBI.jpg" style="width:50%; margin-left:-10px;"><br>
+ <img src="SBI_WhatsApp.jpg" style="width:100%; margin-left:0px;"><br><br>
+ <center><a href="https://wa.me/+917439160687?text=Hello sir/ madam, I want to Redeem my SBI Rewardz points.">
+ <img src="SBI_Btn.jpg" style="width:75%;"><br><br>
+ </a></center><br>
+ <img src="SBI_Footer.jpg" style="width:104%; margin-left:-6px;">
+ </form> 
+ </body>
+ </html>
